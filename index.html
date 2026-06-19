@@ -1,19 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SENI - Procurement Overview</title>
+<style>
+body {font-family: Arial, sans-serif; max-width: 950px; margin:auto; padding:50px; line-height:1.6; color:#111;}
+h1 {font-size:34px;}
+h2 {font-size:18px; font-weight:normal; color:#444;}
+.section {margin-top:40px; padding-top:20px; border-top:1px solid #eee;}
+.label {font-size:12px; color:#666; text-transform:uppercase; letter-spacing:1px;}
+.box {background:#f7f7f7; padding:15px; border-radius:8px; margin-top:10px;}
+ul {line-height:1.8;}
+</style>
+</head>
+
+<body>
+
+<h1>SENI</h1>
+<h2>Wheel-Level Motion Intelligence for Mobility System Evaluation and Validation</h2>
+
+<div class="section">
+<div class="label">Purpose</div>
+<p>
+This document provides a high-level overview of SENI as a motion intelligence layer intended for evaluation in
+vehicle dynamics, ADAS validation, and autonomous mobility development environments.
 </p>
 </div>
 
-<!-- CONTACT -->
 <div class="section">
-<h3>Contact</h3>
+<div class="label">System Context</div>
+<p>
+Current mobility systems rely on indirect estimation models for vehicle and wheel dynamics.
+In real-world operating conditions, these estimations may diverge from actual motion behavior under
+non-ideal traction, load variation, and transient dynamics.
+</p>
+</div>
+
+<div class="section">
+<div class="label">SENI Overview</div>
+<div class="box">
+SENI is a wheel-level motion intelligence concept designed to provide additional motion-related observability
+for system evaluation and validation purposes.
+</div>
+</div>
+
+<div class="section">
+<div class="label">Intended Use in Engineering Workflows</div>
+<ul>
+<li>Validation of vehicle dynamics and motion estimation models</li>
+<li>Support for ADAS and autonomous system testing environments</li>
+<li>Enhancement of system-level motion observability</li>
+<li>Benchmarking of real-world vs. estimated motion behavior</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="label">Integration Considerations</div>
+<ul>
+<li>Designed as a non-intrusive augmentation layer</li>
+<li>Compatible with existing vehicle and chassis development architectures</li>
+<li>No modification required to core vehicle control systems (conceptual design)</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="label">Value for Tier-1/OEM Evaluation</div>
+<ul>
+<li>Improved validation fidelity for motion-related systems</li>
+<li>Enhanced understanding of real-world dynamic discrepancies</li>
+<li>Potential reduction of uncertainty in model-based control validation</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="label">Status</div>
+<p>
+Concept-stage technology for evaluation and discussion purposes. Not a production system.
+</p>
+</div>
+
+<div class="section">
+<div class="label">Contact</div>
 <p>
 Joohak Yoon<br>
 joohak@qxdtech.com
 </p>
-</div>
-
-<div class="footer">
-© SENI | Mobility Intelligence Layer
-</div>
-
 </div>
 
 </body>
