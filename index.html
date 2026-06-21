@@ -1,180 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>SENI | Motion System Evaluation & Rotation Axis Intelligence</title>
-
-  <meta name="description" content="SENI is a system-level motion evaluation framework enabling consistency analysis between estimated and real-world vehicle dynamics for ADAS validation and mobility system benchmarking.">
-  <meta name="keywords" content="vehicle dynamics, ADAS validation, motion estimation, mobility systems, chassis intelligence, system evaluation">
-  <meta name="author" content="Joohak Yoon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SENI</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 960px;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #0b0f19;
+      color: #e8eefc;
+    }
+
+    .container {
+      max-width: 900px;
       margin: auto;
-      padding: 60px 24px;
-      line-height: 1.75;
-      color: #1f2937;
-      background-color: #f8fafc;
+      padding: 60px 20px;
     }
 
-    h1 {
-      font-size: 44px;
-      font-weight: 700;
-      color: #0f172a;
-      margin-bottom: 8px;
+    h1, h2, h3 {
+      color: #ffffff;
     }
 
-    h2 {
-      font-size: 22px;
-      font-weight: 600;
-      color: #1e293b;
-      margin-top: 0;
-      margin-bottom: 18px;
-    }
-
-    .subtitle {
+    .tagline {
       font-size: 18px;
-      color: #334155;
+      color: #9fb3d9;
+      margin-bottom: 20px;
+    }
+
+    .subtag {
+      font-size: 15px;
+      color: #c8d6f5;
       margin-bottom: 40px;
-      max-width: 820px;
     }
 
-    .section {
-      margin-top: 48px;
-    }
-
-    .label {
-      font-size: 12px;
-      color: #2563eb;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-weight: 700;
-      margin-bottom: 12px;
+    section {
+      margin-bottom: 40px;
     }
 
     .box {
-      background: #ffffff;
-      border-left: 4px solid #2563eb;
+      background: #121a2a;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-top: 10px;
     }
 
     ul {
-      line-height: 1.9;
-    }
-
-    li {
-      color: #334155;
-      margin-bottom: 6px;
-    }
-
-    p {
-      color: #334155;
-      font-size: 16px;
+      margin-top: 10px;
     }
 
     .footer {
-      margin-top: 80px;
-      font-size: 13px;
-      color: #64748b;
-      text-align: center;
+      font-size: 12px;
+      color: #6f7f9c;
+      margin-top: 60px;
+    }
+
+    .highlight {
+      border-left: 3px solid #4da3ff;
+      padding-left: 12px;
     }
   </style>
 </head>
 
 <body>
 
+<div class="container">
+
+  <!-- HERO -->
   <h1>SENI</h1>
 
-  <h2>Motion System Evaluation & Rotation Axis Intelligence Layer</h2>
-
-  <p class="subtitle">
-    A system-level framework enabling consistency analysis between estimated motion states and real-world vehicle dynamics for validation of ADAS and mobility systems.
-  </p>
-
-  <div class="section">
-    <div class="label">Problem</div>
-    <p>
-      Modern mobility systems rely on model-based estimation of vehicle motion states across a system-level rotation axis.
-      However, real-world conditions introduce persistent discrepancies between estimated and actual motion behavior.
-    </p>
-    <ul>
-      <li>Non-linear tire-road interaction under transient conditions</li>
-      <li>Dynamic load transfer and chassis response variation</li>
-      <li>Coupling between longitudinal, lateral, and yaw motion</li>
-      <li>Model simplification in control and estimation systems</li>
-    </ul>
+  <div class="tagline">
+    Structured Evaluation Layer for Mobility System Motion Behavior
   </div>
 
-  <div class="section">
-    <div class="label">Concept</div>
+  <div class="subtag">
+    A framework to analyze consistency between motion behavior representations in ADAS and autonomous mobility systems.
+  </div>
+
+  <!-- PURPOSE -->
+  <section>
+    <h2>Purpose</h2>
     <div class="box">
-      SENI introduces a motion consistency evaluation layer that quantifies divergence between estimated motion states and observed physical vehicle dynamics, without requiring modification of existing control architectures.
+      SENI is a structured evaluation framework for analyzing vehicle motion behavior in modern mobility systems.<br><br>
+      It supports system-level understanding of how motion behavior is represented and evaluated across development and validation environments.
     </div>
-  </div>
+  </section>
 
-  <div class="section">
-    <div class="label">Method</div>
-    <ul>
-      <li>System-level evaluation independent of control logic</li>
-      <li>Compatibility with existing estimation frameworks</li>
-      <li>Focus on rotational motion consistency (yaw / axis-level dynamics)</li>
-    </ul>
-  </div>
+  <!-- WHY IT MATTERS -->
+  <section>
+    <h2>Why It Matters</h2>
+    <div class="box highlight">
+      Validation of mobility systems often relies on isolated testing of components or estimation models.<br><br>
+      However, inconsistencies between expected motion behavior and observed vehicle behavior are not always explicitly evaluated at the system level.<br><br>
+      SENI addresses this gap through a structured evaluation perspective.
+    </div>
+  </section>
 
-  <div class="section">
-    <div class="label">Intended Applications</div>
-    <ul>
-      <li>ADAS validation and verification</li>
-      <li>Vehicle dynamics benchmarking</li>
-      <li>Estimation model performance evaluation</li>
-      <li>Simulation vs real-world consistency analysis</li>
-    </ul>
-  </div>
+  <!-- SYSTEM CONTEXT -->
+  <section>
+    <h2>System Context</h2>
+    <div class="box">
+      Modern mobility systems rely on the representation and interpretation of vehicle motion behavior under real-world operating conditions.<br><br>
+      Differences may exist between expected and observed behavior due to dynamic environmental factors.<br><br>
+      SENI provides a structured perspective for analyzing these differences at a system abstraction level.
+    </div>
+  </section>
 
-  <div class="section">
-    <div class="label">Value Proposition</div>
-    <ul>
-      <li>Improved observability of system-level motion behavior</li>
-      <li>Structured validation of estimation accuracy</li>
-      <li>Reduced uncertainty in mobility system testing</li>
-      <li>Enhanced interpretability of dynamic vehicle responses</li>
-    </ul>
-  </div>
+  <!-- CONCEPT -->
+  <section>
+    <h2>Concept Overview</h2>
+    <div class="box">
+      SENI defines a structured approach for:
+      <ul>
+        <li>Analyzing vehicle motion behavior at a system abstraction level</li>
+        <li>Evaluating consistency between different representations of motion behavior</li>
+        <li>Supporting validation-oriented analysis in mobility development workflows</li>
+        <li>Comparative evaluation under real-world conditions</li>
+      </ul>
+    </div>
+  </section>
 
-  <div class="section">
-    <div class="label">Physical Mapping (Optional)</div>
-    <p>
-      The framework can be mapped to wheel-level motion behavior for empirical validation and experimental benchmarking.
-    </p>
-  </div>
+  <!-- INTENDED USE -->
+  <section>
+    <h2>Intended Use</h2>
+    <div class="box">
+      <ul>
+        <li>Vehicle dynamics evaluation studies</li>
+        <li>ADAS and autonomous mobility development workflows</li>
+        <li>Mobility system benchmarking and validation studies</li>
+        <li>Motion behavior consistency research</li>
+      </ul>
+    </div>
+  </section>
 
-  <div class="section">
-    <div class="label">About</div>
-    <p>
-      Independent research initiative focused on mobility system intelligence and validation methodologies.
-    </p>
-    <p>
-      QXDTECH explores advanced vehicle dynamics evaluation frameworks for next-generation mobility systems.
-    </p>
-  </div>
+  <!-- KEY CHARACTERISTICS -->
+  <section>
+    <h2>Key Characteristics</h2>
+    <div class="box">
+      <ul>
+        <li>System-level evaluation perspective</li>
+        <li>Multi-level abstraction of motion behavior</li>
+        <li>Consistency and comparative analysis focus</li>
+        <li>Independent of implementation-specific methods</li>
+      </ul>
+    </div>
+  </section>
 
-  <div class="section">
-    <div class="label">Contact</div>
-    <p>
-      Joohak Yoon<br>
-      joohak@qxdtech.com
-    </p>
-  </div>
+  <!-- CORE PRINCIPLE -->
+  <section>
+    <h2>Core Principle</h2>
+    <div class="box">
+      SENI focuses on consistency between different representations of vehicle motion behavior rather than implementation-specific methods.<br><br>
+      It provides a structured evaluation layer for analyzing system-level consistency in mobility systems.
+    </div>
+  </section>
 
+  <!-- IMPORTANT NOTE -->
+  <section>
+    <h2>Important Note</h2>
+    <div class="box">
+      SENI is a conceptual framework for evaluation and analysis.<br><br>
+      It does not define or rely on specific hardware configurations, sensor implementations, or algorithmic processing methods.
+    </div>
+  </section>
+
+  <!-- POC OBJECTIVE -->
+  <section>
+    <h2>PoC Objective</h2>
+    <div class="box">
+      We are currently seeking PoC collaboration with mobility and ADAS validation teams to evaluate:
+      <ul>
+        <li>System-level motion behavior consistency analysis</li>
+        <li>Applicability in ADAS and mobility validation workflows</li>
+        <li>Integration potential into existing evaluation pipelines</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <div class="box">
+      For PoC collaboration or technical discussion, please reach out for evaluation alignment.<br><br>
+      (Contact information can be added here)
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <div class="footer">
-    © SENI | Motion System Evaluation & Rotation Axis Intelligence Layer
+    © SENI Framework — Conceptual Mobility Evaluation Layer
   </div>
+
+</div>
 
 </body>
 </html>
