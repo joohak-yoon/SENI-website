@@ -2,238 +2,671 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SENI | Rotational Motion Intelligence Framework</title>
-  <meta name="description" content="SENI is a structured evaluation framework for analyzing rotational motion behavior across industrial rotating systems and mobility applications.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SENI | Rotational Motion Intelligence Framework | QXD LLC</title>
+
+  <meta name="description" content="SENI is a structured framework by QXD LLC for evaluating rotational motion consistency across industrial and mobility systems.">
+  <meta name="keywords" content="SENI, QXD LLC, rotational motion, motion intelligence, industrial systems, mobility systems, validation framework">
+  <meta name="author" content="QXD LLC">
+  <meta name="robots" content="index,follow">
+
+  <link rel="canonical" href="https://joohak-yoon.github.io/SENI-website/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SENI | QXD LLC">
+  <meta property="og:description" content="A structured framework for evaluating rotational motion consistency across industrial and mobility systems.">
+  <meta property="og:url" content="https://joohak-yoon.github.io/SENI-website/">
+  <meta property="og:site_name" content="QXD LLC">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SENI | QXD LLC">
+  <meta name="twitter:description" content="Structured evaluation of rotational motion behavior for industrial and mobility applications.">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"QXD LLC",
+    "url":"https://joohak-yoon.github.io/SENI-website/",
+    "description":"Technology company developing structured engineering evaluation frameworks."
+  }
+  </script>
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #0b0f19;
-      color: #e8eefc;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 60px 20px;
+    html{
+      scroll-behavior:smooth;
     }
 
-    h1, h2, h3 {
-      color: #ffffff;
+    body{
+      font-family:
+      "Segoe UI",
+      Arial,
+      Helvetica,
+      sans-serif;
+
+      color:#222;
+      background:#fff;
+      line-height:1.75;
+      -webkit-font-smoothing:antialiased;
     }
 
-    .tagline {
-      font-size: 18px;
-      color: #9fb3d9;
-      margin-bottom: 20px;
+    img{
+      max-width:100%;
+      display:block;
     }
 
-    .subtag {
-      font-size: 15px;
-      color: #c8d6f5;
-      margin-bottom: 40px;
+    a{
+      color:inherit;
+      text-decoration:none;
     }
 
-    section {
-      margin-bottom: 40px;
+    .container{
+      width:min(1180px,92%);
+      margin:auto;
     }
 
-    .box {
-      background: #121a2a;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 10px;
+    section{
+      padding:90px 0;
     }
 
-    ul {
-      margin-top: 10px;
+    h1,h2,h3{
+      font-weight:600;
+      line-height:1.2;
+      letter-spacing:-0.02em;
     }
 
-    li {
-      margin-bottom: 8px;
+    h1{
+      font-size:3.3rem;
     }
 
-    .footer {
-      font-size: 12px;
-      color: #6f7f9c;
-      margin-top: 60px;
+    h2{
+      font-size:2.2rem;
+      margin-bottom:25px;
     }
 
-    .highlight {
-      border-left: 3px solid #4da3ff;
-      padding-left: 12px;
+    h3{
+      font-size:1.2rem;
+      margin-bottom:12px;
     }
 
-    a {
-      color: #4da3ff;
-      text-decoration: none;
+    p{
+      color:#555;
+      margin-bottom:18px;
+      font-size:1.05rem;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
     }
+
+    .section-title p{
+      max-width:760px;
+      margin:auto;
+    }
+
+    /* ---------- Header ---------- */
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:#fff;
+      border-bottom:1px solid #ececec;
+    }
+
+    nav{
+      height:72px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-size:1.25rem;
+      font-weight:700;
+      letter-spacing:0.05em;
+    }
+
+    .menu{
+      display:flex;
+      gap:34px;
+      list-style:none;
+    }
+
+    .menu a{
+      color:#444;
+      font-size:.95rem;
+      transition:.2s;
+    }
+
+    .menu a:hover{
+      color:#000;
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+      padding:120px 0 110px;
+      background:
+      linear-gradient(
+      to bottom,
+      #ffffff,
+      #f8f9fb
+      );
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:
+      1.2fr
+      .8fr;
+      gap:70px;
+      align-items:center;
+    }
+
+    .eyebrow{
+
+      display:inline-block;
+
+      padding:8px 14px;
+
+      border:1px solid #dcdcdc;
+
+      border-radius:999px;
+
+      color:#666;
+
+      font-size:.82rem;
+
+      margin-bottom:24px;
+    }
+
+    .hero h1{
+      margin-bottom:28px;
+    }
+
+    .hero p{
+      font-size:1.15rem;
+      max-width:720px;
+    }
+
+    .hero-actions{
+      display:flex;
+      gap:18px;
+      margin-top:38px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+
+      display:inline-block;
+
+      padding:14px 26px;
+
+      border-radius:8px;
+
+      transition:.2s;
+
+      font-weight:600;
+    }
+
+    .btn-primary{
+      background:#111;
+      color:#fff;
+    }
+
+    .btn-primary:hover{
+      background:#000;
+    }
+
+    .btn-outline{
+      border:1px solid #bbb;
+      color:#222;
+    }
+
+    .btn-outline:hover{
+      border-color:#111;
+    }
+
+    .hero-card{
+
+      border:1px solid #e5e5e5;
+
+      border-radius:14px;
+
+      padding:36px;
+
+      background:#fff;
+
+      box-shadow:
+      0 18px 45px rgba(0,0,0,.05);
+    }
+
+    .hero-card h3{
+      margin-bottom:18px;
+    }
+
+    .hero-card ul{
+      padding-left:18px;
+      color:#555;
+    }
+
+    .hero-card li{
+      margin-bottom:12px;
+    }
+
+    /* ---------- Cards ---------- */
+
+    .grid-3{
+
+      display:grid;
+
+      grid-template-columns:
+      repeat(3,1fr);
+
+      gap:28px;
+    }
+
+    .card{
+
+      padding:34px;
+
+      border:1px solid #ebebeb;
+
+      border-radius:12px;
+
+      transition:.25s;
+
+      background:#fff;
+    }
+
+    .card:hover{
+
+      transform:translateY(-4px);
+
+      box-shadow:
+      0 18px 40px rgba(0,0,0,.06);
+    }
+
+    .card h3{
+      margin-bottom:14px;
+    }
+
+    .card p{
+      margin-bottom:0;
+    }
+
+    @media(max-width:980px){
+
+      h1{
+        font-size:2.5rem;
+      }
+
+      .hero-grid{
+        grid-template-columns:1fr;
+      }
+
+      .grid-3{
+        grid-template-columns:1fr;
+      }
+
+      .menu{
+        display:none;
+      }
+
+    }
+
   </style>
+
 </head>
 
 <body>
 
+<header>
+
 <div class="container">
 
-  <h1>SENI</h1>
+<nav>
 
-  <div class="tagline">
-    Rotational Motion Intelligence for Industrial and Mobility System Validation
-  </div>
+<div class="logo">
+QXD LLC
+</div>
 
-  <div class="subtag">
-    A framework for analyzing consistency between expected and observed motion behavior across industrial rotating systems and mobility applications.
-  </div>
+<ul class="menu">
 
-  <section>
-    <h2>Purpose</h2>
-    <div class="box">
-      SENI is a structured evaluation framework for analyzing rotational motion behavior in modern engineered systems.<br><br>
+<li><a href="#about-seni">SENI</a></li>
 
-      It supports system-level understanding of how motion behavior is represented and evaluated across industrial and mobility development environments.
-    </div>
-  </section>
+<li><a href="#applications">Applications</a></li>
 
-  <section>
-    <h2>Why It Matters</h2>
-    <div class="box highlight">
-      Validation of complex systems often relies on isolated testing of components, sensors, or estimation models.<br><br>
+<li><a href="#technology">Technology</a></li>
 
-      However, inconsistencies between expected motion behavior and observed behavior are not always explicitly evaluated at the system level.<br><br>
+<li><a href="#company">QXD LLC</a></li>
 
-      SENI addresses this gap through a structured evaluation perspective.
-    </div>
-  </section>
+<li><a href="#contact">Contact</a></li>
 
-  <section>
-    <h2>System Context</h2>
-    <div class="box">
-      Modern engineered systems rely on the representation and interpretation of rotational motion behavior under real-world operating conditions.<br><br>
+</ul>
 
-      Differences may exist between expected and observed behavior due to dynamic environmental factors, operational variability, or system interactions.<br><br>
-
-      SENI provides a structured perspective for analyzing these differences at a system abstraction level.<br><br>
-
-      While initially motivated by mobility validation challenges, SENI is designed to support consistency analysis across industrial rotating assets, with vehicle wheel systems representing one application domain.
-    </div>
-  </section>
-
-  <section>
-    <h2>Concept Overview</h2>
-    <div class="box">
-      SENI defines a structured approach for:
-
-      <ul>
-        <li>Analyzing rotational motion behavior at a system abstraction level</li>
-        <li>Evaluating consistency between different representations of motion behavior</li>
-        <li>Supporting validation-oriented analysis in development workflows</li>
-        <li>Comparative evaluation under real-world operating conditions</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Intended Use</h2>
-    <div class="box">
-
-      <h3>Industrial Domain (Primary Focus)</h3>
-
-      <ul>
-        <li>Industrial rotating systems</li>
-        <li>Energy and power generation systems</li>
-        <li>Heavy machinery and industrial equipment</li>
-        <li>Rotating equipment condition and behavior validation</li>
-      </ul>
-
-      <h3>Mobility Domain (Secondary Focus)</h3>
-
-      <ul>
-        <li>Vehicle dynamics evaluation studies</li>
-        <li>ADAS and autonomous mobility development workflows</li>
-        <li>Mobility system benchmarking and validation studies</li>
-        <li>Motion behavior consistency research</li>
-      </ul>
-
-    </div>
-  </section>
-
-  <section>
-    <h2>Key Characteristics</h2>
-    <div class="box">
-      <ul>
-        <li>System-level evaluation perspective</li>
-        <li>Multi-level abstraction of motion behavior</li>
-        <li>Consistency and comparative analysis focus</li>
-        <li>Independent of implementation-specific methods</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Core Principle</h2>
-    <div class="box">
-      SENI focuses on consistency between different representations of rotational motion behavior rather than implementation-specific methods.<br><br>
-
-      It provides a structured evaluation layer for analyzing system-level consistency across industrial and mobility systems.
-    </div>
-  </section>
-
-  <section>
-    <h2>Important Note</h2>
-    <div class="box">
-      SENI is a conceptual framework for evaluation and analysis.<br><br>
-
-      It does not define or rely on specific hardware configurations, sensor implementations, or algorithmic processing methods.
-    </div>
-  </section>
-
-  <section>
-    <h2>SENI IP Status</h2>
-    <div class="box">
-      SENI is protected by patents and related intellectual property.<br><br>
-
-      SENI is proprietary technology developed by QXD LLC.
-    </div>
-  </section>
-
-  <section>
-    <h2>PoC Objective</h2>
-    <div class="box">
-      We are currently seeking PoC collaboration with industrial automation, rotating equipment, and mobility validation teams to evaluate:
-
-      <ul>
-        <li>System-level motion behavior consistency analysis</li>
-        <li>Applicability in industrial and mobility validation workflows</li>
-        <li>Integration potential into existing evaluation pipelines</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <div class="box">
-      For PoC collaboration or technical discussion, please reach out for evaluation alignment.<br><br>
-
-      Email:
-      <a href="mailto:joohak@qxdtech.com">
-        joohak@qxdtech.com
-      </a>
-    </div>
-  </section>
-
-  <div class="footer">
-    © 2026 QXD LLC. All rights reserved.
-  </div>
+</nav>
 
 </div>
+
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-grid">
+
+<div>
+
+<div class="eyebrow">
+Engineering Evaluation Framework
+</div>
+
+<h1>
+SENI
+</h1>
+
+<p>
+
+A structured framework developed by QXD LLC for evaluating rotational motion consistency across industrial and mobility systems.
+
+Designed for engineering assessment, validation planning, and future collaborative research while maintaining protection of proprietary implementation details.
+
+</p>
+
+<div class="hero-actions">
+
+<a class="btn btn-primary" href="#about-seni">
+Explore SENI
+</a>
+
+<a class="btn btn-outline" href="#contact">
+Contact QXD LLC
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-card">
+
+<h3>
+Framework Overview
+</h3>
+
+<ul>
+
+<li>Structured engineering evaluation framework</li>
+
+<li>Applicable across multiple rotating systems</li>
+
+<li>Supports industrial and mobility domains</li>
+
+<li>Designed for scalable engineering collaboration</li>
+
+<li>Public information only — implementation details are intentionally omitted</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+```
+<section id="about-seni">
+  <div class="container">
+    <div class="section-title">
+      <h2>What is SENI?</h2>
+      <p>
+        SENI is a structured engineering evaluation framework designed to describe and analyze rotational motion behavior in complex systems without exposing implementation details.
+      </p>
+    </div>
+  </div>
+</section>
+<section id="why-seni">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Why SENI?</h2>
+      <p>
+        Modern engineering systems require consistent interpretation of rotational behavior across design, testing, and validation environments.
+      </p>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="card">
+        <h3>System Consistency</h3>
+        <p>
+          Provides a structured view to compare expected and observed motion behavior across engineering stages.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Cross-Domain Applicability</h3>
+        <p>
+          Designed for use across industrial machinery, mobility systems, and validation environments.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Engineering Alignment</h3>
+        <p>
+          Supports consistent interpretation between design intent and real-world system behavior.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section id="applications">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Application Domains</h2>
+      <p>
+        SENI is designed to support structured evaluation across multiple engineering and mobility-related domains.
+      </p>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="card">
+        <h3>Industrial Systems</h3>
+        <p>
+          Applied to rotating machinery and industrial equipment where motion behavior consistency is critical for system evaluation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Mobility Systems</h3>
+        <p>
+          Supports analysis of vehicle dynamics and wheel-related motion behavior in mobility platforms.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Validation & Testing</h3>
+        <p>
+          Provides a structured reference layer for comparing expected and observed system behavior during validation.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section id="key-characteristics">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Key Characteristics</h2>
+      <p>
+        SENI defines a structured approach to interpreting rotational motion behavior in engineered systems.
+      </p>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="card">
+        <h3>Structured Interpretation</h3>
+        <p>
+          Provides a consistent conceptual layer for understanding system-level motion behavior.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Cross-System Perspective</h3>
+        <p>
+          Designed to be applicable across different mechanical and mobility architectures.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Evaluation-Oriented Design</h3>
+        <p>
+          Focused on system-level assessment rather than component-level implementation.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section id="technology">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Technology Status</h2>
+      <p>
+        SENI is currently defined as a structured engineering framework under ongoing research and conceptual validation.
+      </p>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="card">
+        <h3>Concept Stage</h3>
+        <p>
+          The framework is defined at a conceptual engineering level for system interpretation and evaluation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Research Exploration</h3>
+        <p>
+          Ongoing exploration focuses on applicability across industrial and mobility domains.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Collaboration Ready</h3>
+        <p>
+          SENI is positioned for discussion with potential industry and research collaborators.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section id="company">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>About QXD LLC</h2>
+      <p>
+        QXD LLC is a technology-focused company developing structured engineering concepts and evaluation frameworks for future mobility and industrial systems.
+      </p>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="card">
+        <h3>Engineering Focus</h3>
+        <p>
+          Focused on conceptual frameworks for system-level engineering interpretation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Research-Oriented Approach</h3>
+        <p>
+          Emphasis on structured thinking for complex system behavior analysis.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Industry Collaboration</h3>
+        <p>
+          Open to technical discussion and validation-oriented collaboration.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section id="poc">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>PoC Collaboration</h2>
+      <p>
+        SENI is available for proof-of-concept discussions with industrial and research partners.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Collaboration Scope</h3>
+      <p>
+        Discussions are focused on system-level evaluation frameworks and validation methodologies without exposure of proprietary implementation details.
+      </p>
+    </div>
+
+  </div>
+</section>
+<section id="contact">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p>
+        For collaboration inquiries or evaluation discussions, please contact QXD LLC.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Email</h3>
+      <p>contact@qxd-llc.com</p>
+    </div>
+
+  </div>
+</section>
+<footer style="border-top:1px solid #eee; padding:40px 0; text-align:center; color:#777; font-size:0.9rem;">
+  <div class="container">
+    <p>© 2026 QXD LLC. All rights reserved.</p>
+    <p>SENI — Structured Engineering Evaluation Framework</p>
+  </div>
+</footer>
 
 </body>
 </html>
